@@ -10,6 +10,7 @@ defmodule MultiRepos.Application do
     children = [
       # Start the Ecto repository
       supervisor(MultiRepos.Repo, []),
+      supervisor(MultiRepos.Context1.Repo, []),
       # Start the endpoint when the application starts
       supervisor(MultiRepos.Web.Endpoint, []),
       # Start your own worker by calling: MultiRepos.Worker.start_link(arg1, arg2, arg3)

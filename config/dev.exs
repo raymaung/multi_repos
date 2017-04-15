@@ -56,3 +56,12 @@ config :multi_repos, MultiRepos.Repo,
   database: "multi_repos_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :multi_repos, MultiRepos.Context1.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "context1_dev",
+  hostname: "localhost",
+  priv: "priv/context1_repo",
+  pool_size: 10

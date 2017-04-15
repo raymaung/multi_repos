@@ -17,3 +17,12 @@ config :multi_repos, MultiRepos.Repo,
   database: "multi_repos_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :multi_repos, MultiRepos.Context1.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "context1_test",
+  hostname: "localhost",
+  priv: "priv/context1_repo",
+  pool_size: 10
