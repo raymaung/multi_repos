@@ -4,7 +4,7 @@ defmodule MultiRepos.Context2 do
   """
 
   import Ecto.{Query, Changeset}, warn: false
-  alias MultiRepos.Repo
+  alias MultiRepos.Context1.Repo
 
   alias MultiRepos.Context2.User
 

@@ -10,14 +10,6 @@ config :multi_repos, MultiRepos.Web.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :multi_repos, MultiRepos.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "multi_repos_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
-
 config :multi_repos, MultiRepos.Context1.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",

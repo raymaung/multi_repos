@@ -49,14 +49,6 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :multi_repos, MultiRepos.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "multi_repos_dev",
-  hostname: "localhost",
-  pool_size: 10
-
 config :multi_repos, MultiRepos.Context1.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",

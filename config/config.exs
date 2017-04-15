@@ -8,8 +8,7 @@ use Mix.Config
 # General application configuration
 config :multi_repos,
   ecto_repos: [
-    MultiRepos.Context1.Repo,
-    MultiRepos.Repo
+    MultiRepos.Context1.Repo
   ]
 
 # Configures the endpoint
